@@ -1,0 +1,45 @@
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.util.Date"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" href="imagens/favicon.ico" />
+        <title>PontoFit</title>
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">  
+            <a href="home.jsp"><img src="imagens/home.png" alt="home"/> Home</a>
+            <a href="adiciona-funcionario.jsp"><img src="imagens/add.png" alt="add"/> Cadastrar Funcionário</a>
+            <a href="funcionarios.jsp"><img src="imagens/users.png" alt="users"/> Lista de Funcionários</a>
+            <a href="estabelecimentos.jsp"><img src="imagens/locate.png" alt="home"/> Unidades</a>
+            <a href="sobre.jsp"><img src="imagens/sobre.png" alt="sobre"/> Sobre</a>
+            <a href="#"><img src="imagens/time.png" alt="time"/>
+                <%
+                String data;
+                SimpleDateFormat sd = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss");
+                Date dataAtual = new Date(System.currentTimeMillis());
+                data = sd.format(dataAtual);
+                out.print(data);
+                %>
+            </a>
+            <a href="adm-logout.jsp"><img src="imagens/logout.png" alt="logout"/> Logout</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"><img src="imagens/drop.png" alt="menu"/></i>
+            </a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                     x.className = "topnav";
+                }
+            }
+        </script>
+        <div id="sessao"><%@include file="sessao-adm.jspf" %></div>
+        <br/>
+    </body>
+</html>

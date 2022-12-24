@@ -1,0 +1,7 @@
+<%
+    if(session.getValue("usuario") != null && session.getValue("permissao") != null){        
+        out.println("<br> Olá " + session.getValue("usuario") + "!");        
+    }else{
+        response.sendRedirect("index.html");
+    }
+%>

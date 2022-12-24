@@ -1,0 +1,8 @@
+<%
+    if(session.getValue("usuario") != null && session.getValue("tipo") != null
+            && session.getValue("codLogin") != null){        
+        out.println("<br>Olá " + session.getValue("usuario") + "!");         
+    }else{
+        response.sendRedirect("index.html");
+    }
+%>

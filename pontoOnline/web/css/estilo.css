@@ -1,0 +1,338 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap);
+body{
+    background-color:#181818;
+    font-family: 'Lato', sans-serif;
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body p {
+    color: #DCDCDC;
+}
+
+form td {
+    color:#DCDCDC;
+    font-weight: bold;
+}
+
+.botao{
+    background-color:#4B0082;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color:#fff;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px #222;
+    border: 0px;
+    border-radius: 4px;
+}
+
+.botao:hover{
+    background-color:#222439;
+    cursor: pointer;
+}
+
+#esquerda {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-color: #212121;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.8);
+}
+
+#cabecalho{
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #8B0A50;
+    text-shadow: 0.03em 0.03em #000000;
+    background: #000000;
+    padding: 10px;
+}
+
+#sessao{
+    font-family: 'Oswald', sans-serif; 
+    font-size: 18px;
+    text-align: left;
+    color: #DCDCDC;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #212121;
+  overflow: hidden;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  font-family: 'Oswald', sans-serif;  
+  float: left;
+  display: block;
+  color: #DCDCDC;
+  text-align: center;
+  padding: 28px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #676767;
+  color: #181818;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #DCDCDC;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 900px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    color: #DCDCDC;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 900px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+#login{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-color: #212121;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-align:center;
+    color:#DCDCDC;
+}
+
+#logado{
+    width:280px;
+    height:280px;
+    background: #F93;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    text-align:center;
+    padding:20px;
+    color:#4B0082;
+    position: absolute;
+    left: 900px;
+    top: 250px;
+}
+
+#logado td{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+
+}
+
+#logado a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#logado h3{
+    text-align:center;
+    color:#4B0082;
+}
+
+h4 {
+    color: #DCDCDC;
+}
+
+fieldset{
+    text-align: justify;
+    border-color: #4B0082;
+}
+
+fieldset legend{
+    text-transform:uppercase;
+    color: #DCDCDC;    
+    font-weight: bold;
+    width: auto;
+}
+
+form {
+  margin: 20px auto;
+}
+
+/*
+input {
+  font-family: 'Lato', sans-serif;
+  background-color: #d9d9d9;
+  border:2px solid #4B0082;
+  font-size:15px;
+  min-height:30px;
+  margin-bottom:15px;
+  margin-top:5px;
+  outline: none;
+
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -o-border-radius:5px;
+  -ms-border-radius:5px;
+  border-radius:5px;
+}
+
+ 
+select {
+  font-family: 'Lato', sans-serif;
+  background-color: #d9d9d9;
+  border:2px solid #4B0082;
+  font-size:15px;
+  min-height:30px;
+  margin-bottom:15px;
+  margin-top:5px;
+  outline: none;
+
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -o-border-radius:5px;
+  -ms-border-radius:5px;
+  border-radius:5px;
+}
+ */
+ 
+.tabela{
+    width: 70%;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    border: 1px solid #222439;
+    background-color: #DCDCDC;
+    color: #2c2a40;
+    overflow-y: auto;
+}
+
+.tabela th{
+    background-color: #222439;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.tabela tr:hover{
+    background-color: #fff;
+}
+
+.radio-inline input[type=radio]{
+    position:absolute;
+    margin-top:4px\9;
+    margin-left:-20px
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=password] {
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #222439;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the reset button */
+input[type=reset] {
+  background-color: #222439;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 50%;
+    margin-top: 0;
+  }
+  .col-25, .col-75, input[type=reset] {
+    width: 50%;
+    margin-top: 0;
+  }
+}
